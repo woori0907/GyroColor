@@ -12,8 +12,8 @@ let pi = Math.PI;
 const getGyroscope = () => {
     radianX = gyroscope.x * (180 / pi);
     radianY = gyroscope.y * (180 / pi);
-    angleX = radianX * (180 / pi);
-    angleY = radianY * (180 / pi);
+    angleX = Math.floor(radianX * (180 / pi));
+    angleY = Math.floor(radianY * (180 / pi));
     viewAngleX.innerText = `X-axis : ${angleX}`;
     viewAngleY.innerText = `Y-axis : ${angleY}`;
 }
