@@ -4,12 +4,16 @@ const viewAngleY = document.getElementById("viewAngleY");
 let gyroscope = new Gyroscope({frequncy : 60});
 let angleX = 0;
 let angleY = 0;
+let radianX = 0;
+let radianY = 0;
 let pi = Math.PI;
 
 // get and print current x and y axis
 const getGyroscope = () => {
-    angleX = (angleX + gyroscope.x * 60) * 180 / pi;
-    angleY = (angleY + gyroscope.y * 60) * 180 / pi;
+    radianX = gyroscope.x * 180 / pi;
+    radianY = gyroscope.y * 180 / pi;
+    angleX = radianX * 180 / pi;
+    angleY = radianY * 180 / pi;
     viewAngleX.innerText = `X-axis : ${angleX}`;
     viewAngleY.innerText = `Y-axis : ${angleY}`;
 }
