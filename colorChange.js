@@ -10,10 +10,10 @@ let pi = Math.PI;
 
 // get and print current x and y axis
 const getGyroscope = () => {
-    radianX = gyroscope.x * 180 / pi;
-    radianY = gyroscope.y * 180 / pi;
-    angleX = radianX * 180 / pi;
-    angleY = radianY * 180 / pi;
+    radianX = gyroscope.x * (180 / pi);
+    radianY = gyroscope.y * (180 / pi);
+    angleX = radianX * (180 / pi);
+    angleY = radianY * (180 / pi);
     viewAngleX.innerText = `X-axis : ${angleX}`;
     viewAngleY.innerText = `Y-axis : ${angleY}`;
 }
