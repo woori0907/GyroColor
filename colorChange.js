@@ -1,7 +1,7 @@
 // 변수 불러오기
 const viewAngleX = document.getElementById("viewAngleX");
 const viewAngleY = document.getElementById("viewAngleY");
-let gyroscope = new Gyroscope({frequncy : 60});
+let gyroscope = new Gyroscope({frequency : 10});
 let firstColor;
 let secondColor;
 
