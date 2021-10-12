@@ -7,8 +7,6 @@ let secondColor;
 
 const randomColor = () =>{
     const index = Math.floor(Math.random() * colors.length);
-    console.log(index);
-    console.log(colors[index]);
     return colors[index];
 }
 
@@ -16,7 +14,9 @@ const randomColor = () =>{
 const getGyroscope = () => {
     firstColor = randomColor();
     secondColor = randomColor();
-    document.body.style.backgroundImgae = `linear-gradient(to top, ${firstColor}, 0%, ${secondColor}, 100%)`
+    console.log(firstColor);
+    console.log(secondColor);
+    document.body.style.backgroundImage = `linear-gradient(45deg, ${firstColor} 0%, ${secondColor} 100%)`;
     // background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 
