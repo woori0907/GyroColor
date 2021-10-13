@@ -1,7 +1,25 @@
 @import "reset.css";
 
 body{
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s;
+    background-image: linear-gradient(45deg, #a18cd1 0%, #fbc2eb 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+#contentWrap{
+    position: relative;
+}
+.gradient-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+    opacity: 0;
+    -webkit-transition: all 1000ms ease-out;
+    -moz-transition:    all 1000ms ease-out;
+    -ms-transition:     all 1000ms ease-out;
+    -o-transition:      all 1000ms ease-out;
+    transition: all 500ms ease-out;
 }
