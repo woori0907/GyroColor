@@ -8,6 +8,15 @@ body{
 }
 #contentWrap{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#title{
+    width: 50vh;
+    margin-top: 30vh;
 }
 .gradient-mask{
     position: absolute;
