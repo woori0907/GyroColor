@@ -1,0 +1,64 @@
+@import "reset.css";
+
+body{
+    /* background-image: linear-gradient(45deg, #a18cd1 0%, #fbc2eb 100%); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+#contentWrap{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.blind{
+    display: none !important;
+}
+
+#title-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-transition: all 1000ms ease-out;
+    -moz-transition:    all 1000ms ease-out;
+    -ms-transition:     all 1000ms ease-out;
+    -o-transition:      all 1000ms ease-out;
+    transition: all 500ms ease-out;
+}
+
+#btnStart{
+    width: 30vh;
+    height: 10vh;
+    border: none;
+    background-color: transparent;
+    margin-top: 5vh;
+    background-image: url("../img/b_start.svg");
+    background-repeat: no-repeat;
+}
+#btnStart:active{
+    background-image: url("../img/b_start_clicked.svg");
+    background-repeat: no-repeat;
+
+}
+
+#title{
+    width: 50vh;
+    margin-top: 30vh;
+}
+.gradient-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+    opacity: 0;
+    -webkit-transition: all 1000ms ease-out;
+    -moz-transition:    all 1000ms ease-out;
+    -ms-transition:     all 1000ms ease-out;
+    -o-transition:      all 1000ms ease-out;
+    transition: all 500ms ease-out;
+}
