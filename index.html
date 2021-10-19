@@ -9,19 +9,27 @@
 </head>
 <body>
     <main id="contentWrap">
-        <section id="title-page" class="blind">
+        <section id="title-page">
             <h1 id="title"><img src="img/title.svg" alt="오늘의 밈"></h1>
             <button id="btnStart"></button>
         </section>
         <section id="main-page">
-            
+            <h1>밈을 뽑으세엽</h1>
+            <button id="btnGetMeme">오늘의 밈 뽑기</button>
+            <article id="memeWrap">
+                <img src="" alt="" id="memeImg">
+                <h3 id="memeTitle"></h3>
+                <p id="memeDesc"></p>
+            </article>
         </section>
         <div id="gradientMask_1" class="gradient-mask"></div>
         <div id="gradientMask_2" class="gradient-mask"></div>
     </main>
     <script src="js/basic.js"></script>
     <script src="js/colorData.js"></script>
+    <script src="js/memeData.js"></script>
     <script src="js/colorChange.js"></script>
+    <script src="js/meme.js"></script>
 </body>
 
 </html>
