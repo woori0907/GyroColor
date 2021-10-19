@@ -27,7 +27,6 @@ const changeColor = () => {
     if(firstColor===secondColor){
         secondColor = randomColor();
     }
-    console.log(gradientMask1.style.opacity==0);
     if(gradientMask1.style.opacity == 0){
         gradientMask1.style.backgroundImage = `linear-gradient(45deg, ${firstColor} 0%, ${secondColor} 100%)`;
         gradientMask1.style.opacity = 1;

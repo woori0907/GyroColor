@@ -54,4 +54,5 @@ const memes = [
         text: "우린 깐부잖아",
         description: '깐부끼리는 네 거 내 거가 없는 거야.'
     },
+    
 ]

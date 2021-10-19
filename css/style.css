@@ -22,10 +22,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    -webkit-transition: all 1000ms ease-out;
-    -moz-transition:    all 1000ms ease-out;
-    -ms-transition:     all 1000ms ease-out;
-    -o-transition:      all 1000ms ease-out;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition:    all 500ms ease-out;
+    -ms-transition:     all 500ms ease-out;
+    -o-transition:      all 500ms ease-out;
     transition: all 500ms ease-out;
 }
 
@@ -48,6 +48,21 @@ body{
     width: 50vh;
     margin-top: 30vh;
 }
+
+
+/* 메인 페이지 레이아웃 */
+#main-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition:    all 500ms ease-out;
+    -ms-transition:     all 500ms ease-out;
+    -o-transition:      all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+
+
 .gradient-mask{
     position: absolute;
     top: 0;
